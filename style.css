@@ -1,0 +1,50 @@
+.portfolio_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  color: red;
+  font-size: 7rem;
+  text-align: center;
+  font-weight: bold;
+  margin-block: 5rem;
+}
+
+.one {
+  grid-row: 1;
+  letter-spacing: 2rem;
+}
+.two {
+  /* writing-mode: sideways-rl; */
+  grid-row: 2;
+  letter-spacing: 2rem;
+}
+.three {
+  /* writing-mode: sideways-lr; */
+  grid-row: 4;
+  letter-spacing: 2rem;
+}
+.four {
+  grid-row: 5;
+  letter-spacing: 2rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+  /* grid-row: 3; */
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 100;
+  column-gap: 20px;
+}
+.container p {
+  border: solid black;
+  padding: 0.5rem 1.5rem;
+  color: black;
+}
+
+.projekter,
+.om_mig {
+  place-content: center;
+  display: grid;
+}

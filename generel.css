@@ -1,0 +1,20 @@
+/* Nustiller alle HTML regler for H1, h2 mm.*/
+* {
+  all: unset;
+  display: revert;
+  cursor: revert;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+
+/*---------------HEADER-------------------*/
+.hjem a {
+  text-decoration: none;
+  color: red;
+}
+footer {
+  text-align: center;
+  margin-bottom: 1rem;
+}
