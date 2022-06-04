@@ -10,11 +10,24 @@ img {
 }
 
 /*---------------HEADER-------------------*/
-.hjem a {
-  text-decoration: none;
+.hjem {
   color: red;
+}
+a {
+  text-decoration: none;
 }
 footer {
   text-align: center;
   margin-bottom: 1rem;
+}
+
+/*--------------- Font Størrelse-------------------*/
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
 }
