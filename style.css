@@ -1,46 +1,58 @@
+/* -------------- MOBILE FIRST ------------------- */
 .portfolio_grid {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, 1fr);
-  color: red;
-  font-size: 7rem;
+  color: blue;
+  /* font-size: 7rem; */
   text-align: center;
   font-weight: bold;
   margin-block: 5rem;
+  font-size: clamp(1.3rem, 9.1vw + 1rem, 5rem);
 }
 
 .one {
   grid-row: 1;
-  letter-spacing: 2rem;
+  letter-spacing: 1rem;
 }
 .two {
-  /* writing-mode: sideways-rl; */
   grid-row: 2;
-  letter-spacing: 2rem;
+  letter-spacing: 1rem;
 }
 .three {
-  /* writing-mode: sideways-lr; */
   grid-row: 4;
-  letter-spacing: 2rem;
+  letter-spacing: 1rem;
 }
 .four {
   grid-row: 5;
-  letter-spacing: 2rem;
+  letter-spacing: 1rem;
 }
 
 .container {
   display: grid;
   grid-template-columns: auto auto;
-  /* grid-row: 3; */
+  grid-row: 3;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 100;
   column-gap: 20px;
 }
+
 .container p {
-  border: solid black;
-  padding: 0.5rem 1.5rem;
+  border: 2px solid black;
+  padding: 0.3rem 1rem;
   color: black;
+}
+
+.forside_tekst_grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+}
+.forside_tekst {
+  grid-column: 2;
+  line-height: 25px;
+  font-size: clamp(0.1rem, 6vw - 1rem, 1.6rem);
+  text-align: center;
 }
 
 .projekter,
@@ -50,3 +62,41 @@
 }
 
 /*------------------- OM MIG ----------------------*/
+.navn {
+  text-align: center;
+  margin-block: 5rem;
+}
+.alberte {
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+}
+.jasmin {
+  font-size: 1.5rem;
+  color: blue;
+}
+.nielsen {
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+}
+.hvem_er_jeg {
+  margin: 2rem;
+}
+.hvem_er_jeg h4 {
+  margin-top: 1rem;
+  color: blue;
+}
+.hvem,
+.cv,
+.faerdigheder,
+.kontakt {
+  text-align: center;
+  color: blue;
+}
+.cv_grid {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  gap: 15px;
+}
+.uddannelse {
+  grid-column: 2;
+}
