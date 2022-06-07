@@ -82,7 +82,6 @@
 
 /*------------------- OM MIG ----------------------*/
 .navn {
-  margin: 4rem;
   letter-spacing: 0.5rem;
   font-weight: bold;
   justify-content: center;
@@ -127,15 +126,31 @@
   border-block: solid;
   padding: 1rem;
 }
-.faerdigheder,
-.kontakt {
+.faerdigheder {
   text-align: center;
   color: var(--blue);
   place-content: center;
   display: grid;
 }
-.faerdigheder h2,
-.kontakt h2 {
+.kontakt {
+  text-align: center;
+  color: black;
+}
+
+/* Blå kontakt tekst, så border kan gå helt ud + størrelse */
+@media (max-width: 800px) {
+  .navn {
+    margin: 4rem;
+  }
+
+  .kontakt h2 {
+    border-block: 2px solid;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+.faerdigheder h2 {
   border-block: solid;
   padding: 1rem;
 }
@@ -157,6 +172,24 @@
 
 /* ------- over 800px ------- */
 @media (min-width: 800px) {
+  /* forside knap border size */
+  .om_mig a {
+    margin-inline: 1.3rem;
+  }
+  /* Navn og billede i om mig */
+  .navn_billede_grid {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .mig_billede {
+    grid-column: 1;
+    grid-row: 1;
+    place-self: center end;
+  }
+  .navn {
+    grid-column: 2;
+  }
+  /* Under billede */
   .om_mig_grid1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -192,7 +225,13 @@
     margin-left: 2rem;
     font-size: 1rem;
   }
-  /* .kontakt {
-    margin-block: var(--space-l);
-  } */
+  .kontakt {
+    margin-bottom: var(--space-m);
+    color: black;
+  }
+  .kontakt h2 {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border-block: 2px solid;
+  }
 }

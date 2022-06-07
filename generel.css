@@ -24,14 +24,11 @@ html {
 /*--------------- Fonte, str/gap -------------------*/
 h1 {
   font-size: 4rem;
-  margin-block: 1rem;
   font-family: "Kdam Thmor Pro", sans-serif;
 }
 h2 {
   font-size: 2.3rem;
-  margin-block: 4rem 2rem;
   font-family: "Kdam Thmor Pro", sans-serif;
-  margin-bottom: var(--space-m);
 }
 h3 {
   font-size: 1.5rem;
@@ -43,6 +40,12 @@ h4 {
 p,
 li {
   font-family: "Red Hat Mono", monospace;
+}
+
+@media (max-width: 800px) {
+  h2 {
+    margin-block: 4rem 2rem;
+  }
 }
 
 /*---------------HEADER-------------------*/
@@ -65,4 +68,9 @@ body {
   margin-inline: 15px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   background-color: var(--beige);
+}
+
+/*--------------- Main -------------------*/
+main {
+  margin-bottom: var(--space-l);
 }
