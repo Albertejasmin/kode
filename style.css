@@ -147,7 +147,7 @@
 .cv_grid {
   display: grid;
   grid-template-columns: 25% 75%;
-  gap: 20px;
+  gap: 30px;
   max-width: 60ch;
   margin: var(--space-m);
 }
@@ -160,20 +160,39 @@
   .om_mig_grid1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-block: var(--space-xl);
   }
-  .kontakt_grid {
-    display: grid;
-    grid-template-columns: 1fr minmax(100px, 0.5fr) 1fr;
-  }
-  .punkter {
+  .hvem {
     grid-column: 1;
   }
-  .kontakt {
-    grid-column: 3;
+  .hvem_tekst {
+    grid-column: 2;
+  }
+  .cv {
+    grid-column: 2;
+  }
+  .cv_grid {
+    grid-row: 2;
+    /* text-align: end; */
+  }
+
+  .faerdigheder_grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: var(--space-xl);
+    column-gap: 40px;
+  }
+  .faerdigheder {
+    grid-column: 1;
+    place-content: center end;
+  }
+  .punkter {
+    grid-column: 2;
     grid-row: 1;
+    margin-left: 2rem;
+    font-size: 1rem;
   }
-  .adresse {
-    grid-column: 3;
-    text-align: end;
-  }
+  /* .kontakt {
+    margin-block: var(--space-l);
+  } */
 }
