@@ -2,13 +2,16 @@
 .portfolio_grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, 1fr);
-  color: blue;
+  /* grid-template-rows: repeat(5, 1fr); */
+  grid-template-rows: 1fr 1fr auto 1fr 1fr;
+  color: var(--blue);
   /* font-size: 7rem; */
   text-align: center;
   font-weight: bold;
   margin-block: 5rem;
-  font-size: clamp(1.3rem, 9.1vw + 1rem, 5rem);
+}
+.portfolio_grid h1 {
+  font-size: clamp(2.5rem, 18vw - 2rem, 7rem);
 }
 
 .one {
@@ -27,6 +30,19 @@
   grid-row: 5;
   letter-spacing: 1rem;
 }
+/*------------------ Fonte til forside tekst  */
+.one h1 {
+  font-family: "Sarpanch", sans-serif;
+}
+.two h1 {
+  font-family: "Red Hat Mono", monospace;
+}
+.three h1 {
+  font-family: "Rajdhani", sans-serif;
+}
+.four h1 {
+  font-family: "PT Mono", monospace;
+}
 
 .container {
   display: grid;
@@ -36,6 +52,7 @@
   font-size: 1rem;
   font-weight: 100;
   column-gap: 20px;
+  font-size: clamp(0.6rem, 7.2vw - 1.2rem, 1.5rem);
 }
 
 .container p {
@@ -52,7 +69,6 @@
   grid-column: 2;
   line-height: 25px;
   font-size: clamp(0.1rem, 6vw - 1rem, 1.6rem);
-  text-align: center;
 }
 
 .projekter,
@@ -60,43 +76,104 @@
   place-content: center;
   display: grid;
 }
+.om_mig a {
+  margin-inline: 0.6rem;
+}
 
 /*------------------- OM MIG ----------------------*/
 .navn {
-  text-align: center;
-  margin-block: 5rem;
-}
-.alberte {
+  margin: 4rem;
   letter-spacing: 0.5rem;
   font-weight: bold;
+  justify-content: center;
+  display: grid;
+}
+.navn h1 {
+  font-size: clamp(4rem, 8vw + 2rem, 6rem);
 }
 .jasmin {
-  font-size: 1.5rem;
-  color: blue;
+  color: var(--blue);
+  /* letter-spacing: 1rem; */
 }
-.nielsen {
-  letter-spacing: 0.5rem;
-  font-weight: bold;
+
+.hvem_tekst {
+  margin: var(--space-m);
+  grid-column: 1;
+  grid-row: 1;
+  max-width: 60ch;
 }
-.hvem_er_jeg {
-  margin: 2rem;
-}
-.hvem_er_jeg h4 {
+.hvem_tekst h3 {
   margin-top: 1rem;
-  color: blue;
+  color: var(--blue);
 }
-.hvem,
-.cv,
+.hvem {
+  grid-column: 2;
+  place-content: center;
+  display: grid;
+  color: var(--blue);
+}
+.hvem h2 {
+  border-block: solid;
+  padding: 1rem;
+}
+
+.cv {
+  grid-column: 1;
+  place-content: center;
+  display: grid;
+  color: var(--blue);
+}
+.cv h2 {
+  border-block: solid;
+  padding: 1rem;
+}
 .faerdigheder,
 .kontakt {
   text-align: center;
-  color: blue;
+  color: var(--blue);
+  place-content: center;
+  display: grid;
 }
+.faerdigheder h2,
+.kontakt h2 {
+  border-block: solid;
+  padding: 1rem;
+}
+.kontakt_grid {
+  margin: var(--space-m);
+  line-height: 2.5rem;
+}
+
 .cv_grid {
   display: grid;
   grid-template-columns: 25% 75%;
-  gap: 15px;
+  gap: 20px;
+  max-width: 60ch;
+  margin: var(--space-m);
 }
 .uddannelse {
   grid-column: 2;
+}
+
+/* ------- over 800px ------- */
+@media (min-width: 800px) {
+  .om_mig_grid1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .kontakt_grid {
+    display: grid;
+    grid-template-columns: 1fr minmax(100px, 0.5fr) 1fr;
+  }
+  .punkter {
+    grid-column: 1;
+  }
+  .kontakt {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .adresse {
+    grid-column: 3;
+    text-align: end;
+  }
 }
