@@ -50,13 +50,21 @@ li {
 
 /*---------------HEADER-------------------*/
 
-header {
+.banner {
   padding: 2rem 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   flex-flow: wrap;
   font-family: "Sarpanch", sans-serif;
+  font-size: 1.1rem;
+}
+.main-menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  transition: background-color 0.5s ease;
 }
 .hjem {
   letter-spacing: 5px;
@@ -68,6 +76,40 @@ a {
 span {
   color: var(--blue);
 }
+/* burgermenu */
+.toggle-btn {
+  background: transparent;
+  border: none;
+  min-width: 44px;
+  min-height: 44px;
+  cursor: pointer;
+}
+
+.toggle-btn {
+  display: block; /* Vis knappen, når viewporten maksimalt er 600px */
+}
+
+.main-menu {
+  display: contents; /* Fjern ".main-menu"-boksen fra ligningen, når viewporten maksimalt er 600px, men behold børnene, så disse deltager i flex-kontekten */
+}
+.main-menu a:hover {
+  border-bottom: 2px solid var(--blue);
+}
+
+.main-menu ul {
+  display: none; /* Fjern menu-listen som standard */
+}
+
+.main-menu.shown ul {
+  /* Vis menu-listen, når klassen ".shown" er til stede */
+  border-top: 1px solid #000;
+  padding-top: 1rem;
+  display: flex;
+  flex: 1 1 100%;
+  flex-flow: column;
+  text-align: end;
+}
+
 /*--------------- Footer-------------------*/
 footer {
   text-align: center;
@@ -78,7 +120,7 @@ footer {
 
 /*--------------- Body -------------------*/
 body {
-  margin-inline: 15px;
+  margin-inline: 20px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   background-color: var(--beige);
 }
