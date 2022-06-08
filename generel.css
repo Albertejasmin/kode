@@ -24,7 +24,7 @@ html {
 /*--------------- Fonte, str/gap -------------------*/
 h1 {
   font-size: 4rem;
-  font-family: "Kdam Thmor Pro", sans-serif;
+  font-family: "Sarpanch", sans-serif;
 }
 h2 {
   font-size: 2.3rem;
@@ -49,13 +49,26 @@ li {
 }
 
 /*---------------HEADER-------------------*/
-.hjem {
-  color: red;
-  margin-bottom: 2rem;
+
+header {
+  padding: 2rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-flow: wrap;
+  font-family: "Sarpanch", sans-serif;
 }
+.hjem {
+  letter-spacing: 5px;
+}
+
 a {
   text-decoration: none;
 }
+span {
+  color: var(--blue);
+}
+/*--------------- Footer-------------------*/
 footer {
   text-align: center;
   margin-bottom: 1rem;

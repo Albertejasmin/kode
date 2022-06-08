@@ -8,7 +8,7 @@
   /* font-size: 7rem; */
   text-align: center;
   font-weight: bold;
-  margin-block: 5rem;
+  margin-block: 2rem 5rem;
 }
 .portfolio_grid h1 {
   font-size: clamp(2.5rem, 18vw - 2rem, 7rem);
@@ -56,25 +56,29 @@
 }
 
 .container p {
-  border: 2px solid black;
+  border: 1px solid black;
   padding: 0.3rem 1rem;
   color: black;
 }
 
-.forside_tekst_grid {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-}
 .forside_tekst {
-  grid-column: 2;
   line-height: 25px;
-  font-size: clamp(0.1rem, 6vw - 1rem, 1.6rem);
+  font-size: 0.8rem;
+  text-align: center;
 }
 
 .projekter,
 .om_mig {
   place-content: center;
   display: grid;
+}
+.projekter p:hover,
+.om_mig p:hover {
+  color: var(--blue);
+  background-color: white;
+}
+.container p:hover {
+  border: 3px solid var(--blue);
 }
 .om_mig a {
   margin-inline: 0.6rem;
