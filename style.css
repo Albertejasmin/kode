@@ -141,7 +141,8 @@
   color: black;
 }
 
-/* Blå kontakt tekst, så border kan gå helt ud + størrelse */
+/* Sort kontakt tekst, så border kan gå helt ud + størrelse */
+/* Under 800 px */
 @media (max-width: 800px) {
   .navn {
     margin: 4rem;
@@ -151,6 +152,11 @@
     border-block: 2px solid;
     padding: 0.5rem;
     font-size: 1.5rem;
+  }
+  .om_mig_grid1 h2,
+  .cv h2,
+  .kontakt_grid h2 {
+    margin-block: 4rem 2rem;
   }
 }
 
@@ -174,7 +180,7 @@
   grid-column: 2;
 }
 
-/* ------- over 800px ------- */
+/* ------- Over 800px ------- */
 @media (min-width: 800px) {
   /* forside knap border size */
   .om_mig a {
@@ -238,4 +244,51 @@
     font-size: 1.5rem;
     border-block: 2px solid;
   }
+
+  /* ------------------- TEMA 2 --------------------- */
+  .tema2_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+  }
+  .overskrift {
+    text-align: end;
+  }
+  .tema2_beskrivelse {
+    margin-top: 2rem;
+  }
 }
+
+/* ------------------- PROJEKT --------------------- */
+.projekter_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+  place-content: center;
+  gap: 10px;
+}
+
+.projekter_grid a {
+  background-color: var(--blue);
+  padding-block: 18rem;
+  font-size: 4rem;
+  text-align: center;
+}
+.projekter_grid h1,
+.projekter_grid h3 {
+  color: var(--beige);
+}
+.projekt_overskrift {
+  font-size: 12rem;
+  font-weight: bold;
+  text-align: center;
+}
+.projekt_under_overskrift {
+  text-align: center;
+}
+/* ------------------- Fælles TEMA regler  --------------------- */
+.tema_tal {
+  color: var(--blue);
+  font-size: 8rem;
+}
+
+/* ------------------- TEMA 2 --------------------- */
