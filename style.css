@@ -282,9 +282,7 @@
   font-weight: bold;
   text-align: center;
 }
-.projekt_under_overskrift {
-  text-align: center;
-}
+
 /* ------------------- Fælles TEMA regler  --------------------- */
 .tema_tal {
   color: var(--blue);
