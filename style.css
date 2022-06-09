@@ -90,6 +90,7 @@
   font-weight: bold;
   justify-content: center;
   display: grid;
+  line-height: 5rem;
 }
 .navn h1 {
   font-size: clamp(4rem, 8vw + 2rem, 6rem);
@@ -190,73 +191,76 @@
   .navn_billede_grid {
     display: grid;
     grid-template-columns: auto auto;
+    grid-template-rows: repeat(4, 150px);
   }
   .mig_billede {
     grid-column: 1;
-    grid-row: 1;
+    grid-row: 1/5;
     place-self: center end;
   }
   .navn {
     grid-column: 2;
+    grid-row: 1/3;
   }
-  /* Under billede */
   .om_mig_grid1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-block: var(--space-xl);
-  }
-  .hvem {
-    grid-column: 1;
-  }
-  .hvem_tekst {
-    grid-column: 2;
-  }
-  .cv {
-    grid-column: 2;
-  }
-  .cv_grid {
-    grid-row: 2;
-    /* text-align: end; */
-  }
-
-  .faerdigheder_grid {
-    display: grid;
-    grid-template-columns: auto auto;
     margin-bottom: var(--space-xl);
-    column-gap: 40px;
   }
-  .faerdigheder {
-    grid-column: 1;
-    place-content: center end;
-  }
-  .punkter {
-    grid-column: 2;
-    grid-row: 1;
-    margin-left: 2rem;
-    font-size: 1rem;
-  }
-  .kontakt {
-    margin-bottom: var(--space-m);
-    color: black;
-  }
-  .kontakt h2 {
-    padding: 0.5rem;
-    font-size: 1.5rem;
-    border-block: 2px solid;
-  }
+}
+/* Under billede */
 
-  /* ------------------- TEMA 2 --------------------- */
-  .tema2_grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 30px;
-  }
-  .overskrift {
-    text-align: end;
-  }
-  .tema2_beskrivelse {
-    margin-top: 2rem;
-  }
+.hvem {
+  grid-column: 1;
+}
+.hvem_tekst {
+  grid-column: 2;
+}
+.cv {
+  grid-column: 2;
+}
+.cv_grid {
+  grid-row: 2;
+  /* text-align: end; */
+}
+
+.faerdigheder_grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-bottom: var(--space-xl);
+  column-gap: 40px;
+}
+.faerdigheder {
+  grid-column: 1;
+  place-content: center end;
+}
+.punkter {
+  grid-column: 2;
+  grid-row: 1;
+  margin-left: 2rem;
+  font-size: 1rem;
+}
+.kontakt {
+  margin-bottom: var(--space-m);
+  color: black;
+}
+.kontakt h2 {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border-block: 2px solid;
+}
+
+/* ------------------- TEMA 2 --------------------- */
+.tema2_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+}
+.overskrift {
+  text-align: end;
+}
+.tema2_beskrivelse {
+  margin-top: 2rem;
 }
 
 /* ------------------- PROJEKT --------------------- */
