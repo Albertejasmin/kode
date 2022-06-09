@@ -207,9 +207,18 @@
     grid-template-columns: 1fr 1fr;
     margin-bottom: var(--space-xl);
   }
+
+  /* ------------------- TEMA 2 --------------------- */
+  .tema_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+  }
+  .overskrift {
+    text-align: end;
+  }
 }
 /* Under billede */
-
 .hvem {
   grid-column: 1;
 }
@@ -251,14 +260,7 @@
 }
 
 /* ------------------- TEMA 2 --------------------- */
-.tema2_grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 30px;
-}
-.overskrift {
-  text-align: end;
-}
+
 .tema2_beskrivelse {
   margin-top: 2rem;
 }
@@ -282,9 +284,10 @@
   color: var(--beige);
 }
 .projekt_overskrift {
-  font-size: 12rem;
+  font-size: clamp(3rem, 16vw - 1rem, 7rem);
   font-weight: bold;
   text-align: center;
+  margin-bottom: var(--space-l);
 }
 
 /* ------------------- Fælles TEMA regler  --------------------- */
