@@ -216,6 +216,8 @@
   .overskrift {
     text-align: end;
   }
+
+  /* ------------------- OM MIG --------------------- */
 }
 /* Under billede */
 .hvem {
@@ -259,9 +261,20 @@
 }
 
 /* ------------------- TEMA 2 --------------------- */
-
+.tema_grid {
+  margin-bottom: var(--space-l);
+}
 .tema2_beskrivelse {
   margin-top: 2rem;
+}
+.opgave_navn {
+  margin-bottom: var(--space-l);
+}
+.tema_tekst h4 {
+  margin-block: var(--space-m) var(--space-s);
+}
+.tema_tekst h2 {
+  margin-bottom: var(--space-s);
 }
 
 /* ------------------- PROJEKT --------------------- */
