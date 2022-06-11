@@ -74,12 +74,11 @@
 }
 .projekter p:hover,
 .om_mig p:hover {
-  color: var(--blue);
-  background-color: white;
-}
-.container p:hover {
+  color: white;
+  background-color: var(--blue);
   border: 3px solid var(--blue);
 }
+
 .om_mig a {
   margin-inline: 0.6rem;
 }
@@ -266,6 +265,10 @@
 }
 
 /* ------------------- PROJEKT --------------------- */
+.projekter_grid a:hover {
+  border: 10px solid var(--beige);
+}
+
 .projekter_grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
