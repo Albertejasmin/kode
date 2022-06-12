@@ -344,5 +344,12 @@
   color: var(--blue);
   font-size: 8rem;
 }
+.se_min_opgave {
+  /* color: var(--blue); */
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+.se_min_opgave:hover {
+  border-bottom: 2px solid var(--blue);
+}
 
 /* ------------------- TEMA 2 --------------------- */
