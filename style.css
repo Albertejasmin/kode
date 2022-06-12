@@ -158,6 +158,10 @@
   .kontakt_grid h2 {
     margin-block: 4rem 2rem;
   }
+  .opgave_navn img,
+  .fase1_grid img {
+    margin-top: var(--space-s);
+  }
 }
 
 .faerdigheder h2 {
@@ -180,7 +184,7 @@
   grid-column: 2;
 }
 
-/* ------- Over 800px ------- */
+/* ------- OVER 800px ------- */
 @media (min-width: 800px) {
   /* forside knap border size */
   .om_mig a {
@@ -207,6 +211,28 @@
     margin-bottom: var(--space-xl);
   }
 
+  /* ------------------- FASE GRID --------------------- */
+  .tema_tekst {
+    margin-inline: 4rem;
+  }
+  .fase_tekst {
+    display: grid;
+    place-content: center;
+  }
+  .opgave_navn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .fase1_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 4rem;
+  }
+  .fase1_grid img {
+    max-width: 80%;
+  }
   /* ------------------- TEMA 2 --------------------- */
   .tema_grid {
     display: grid;
@@ -215,10 +241,17 @@
   }
   .overskrift {
     text-align: end;
+    place-content: center end;
+    display: grid;
   }
-
-  /* ------------------- OM MIG --------------------- */
+  .farvepalette {
+    order: -1;
+    display: grid;
+    place-content: center;
+  }
 }
+
+/* ------------------- OM MIG --------------------- */
 /* Under billede */
 .hvem {
   grid-column: 1;
@@ -262,13 +295,13 @@
 
 /* ------------------- TEMA 2 --------------------- */
 .tema_grid {
-  margin-bottom: var(--space-l);
+  margin-bottom: var(--space-xl);
 }
 .tema2_beskrivelse {
   margin-top: 2rem;
 }
 .opgave_navn {
-  margin-bottom: var(--space-l);
+  margin-bottom: var(--space-xl);
 }
 .tema_tekst h4 {
   margin-block: var(--space-m) var(--space-s);

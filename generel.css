@@ -15,6 +15,7 @@ html {
   --beige: #f0eee6;
 
   /*------------ gap variabler ---------------*/
+  --space-xs: 0.7rem;
   --space-s: 1rem;
   --space-m: 2rem;
   --space-l: 4rem;
@@ -40,6 +41,9 @@ h4 {
 p,
 li {
   font-family: "Red Hat Mono", monospace;
+}
+p {
+  margin-bottom: var(--space-xs);
 }
 
 /*---------------HEADER-------------------*/
