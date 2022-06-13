@@ -59,6 +59,8 @@
   border: 1px solid black;
   padding: 0.3rem 1rem;
   color: black;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-size: 1rem;
 }
 
 .forside_tekst {
@@ -186,10 +188,6 @@
 
 /* ------- OVER 800px ------- */
 @media (min-width: 800px) {
-  /* forside knap border size */
-  .om_mig a {
-    margin-inline: 1.3rem;
-  }
   /* Navn og billede i om mig */
   .navn_billede_grid {
     display: grid;
@@ -232,6 +230,7 @@
   }
   .fase1_grid img {
     max-width: 80%;
+    aspect-ratio: 16/9;
   }
   /* ------------------- TEMA 2 --------------------- */
   .tema_grid {
@@ -248,6 +247,16 @@
     order: -1;
     display: grid;
     place-content: center;
+  }
+
+  /* ------------------- TEMA 3 --------------------- */
+  .highfedility {
+    grid-column: 1/3;
+  }
+  .billede_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
 
@@ -302,6 +311,8 @@
 }
 .opgave_navn {
   margin-bottom: var(--space-xl);
+  border-block: solid;
+  padding-block: 3rem;
 }
 .tema_tekst h4 {
   margin-block: var(--space-m) var(--space-s);
@@ -351,5 +362,4 @@
 .se_min_opgave:hover {
   border-bottom: 2px solid var(--blue);
 }
-
 /* ------------------- TEMA 2 --------------------- */
