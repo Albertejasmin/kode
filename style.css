@@ -149,7 +149,6 @@
   .navn {
     margin: 4rem;
   }
-
   .kontakt h2 {
     border-block: 2px solid;
     padding: 0.5rem;
@@ -163,6 +162,9 @@
   .opgave_navn img,
   .fase1_grid img {
     margin-top: var(--space-s);
+  }
+  .tema_tekst h4 {
+    margin-block: var(--space-m) var(--space-s);
   }
 }
 
@@ -214,23 +216,27 @@
     margin-inline: 4rem;
   }
   .fase_tekst {
-    display: grid;
-    place-content: center;
+    margin-bottom: var(--space-m);
   }
   .opgave_navn {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 40px;
   }
 
   .fase1_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    gap: 50px;
     margin-top: 4rem;
   }
   .fase1_grid img {
-    max-width: 80%;
+    /* max-width: 80%; */
     aspect-ratio: 16/9;
+    margin-bottom: var(--space-s);
+  }
+  .fase1_grid h4 {
+    margin-bottom: 1rem;
   }
   /* ------------------- TEMA 2 --------------------- */
   .tema_grid {
@@ -238,25 +244,23 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
   }
+
   .overskrift {
     text-align: end;
     place-content: center end;
     display: grid;
   }
-  .farvepalette {
-    order: -1;
-    display: grid;
-    place-content: center;
-  }
 
   /* ------------------- TEMA 3 --------------------- */
-  .highfedility {
-    grid-column: 1/3;
-  }
+
   .billede_grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    margin-top: var(--space-m);
+  }
+  .billede_grid img {
+    aspect-ratio: 16/9;
   }
 }
 
@@ -313,9 +317,6 @@
   margin-bottom: var(--space-xl);
   border-block: solid;
   padding-block: 3rem;
-}
-.tema_tekst h4 {
-  margin-block: var(--space-m) var(--space-s);
 }
 .tema_tekst h2 {
   margin-bottom: var(--space-s);
