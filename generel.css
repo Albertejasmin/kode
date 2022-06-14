@@ -32,11 +32,12 @@ h2 {
   font-family: "Kdam Thmor Pro", sans-serif;
 }
 h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: "Kdam Thmor Pro", sans-serif;
 }
 h4 {
   font-size: 1.5rem;
+  font-family: "Kdam Thmor Pro", sans-serif;
 }
 p,
 li {
@@ -71,7 +72,8 @@ p {
   color: var(--beige);
   padding: 0.5rem;
 }
-.tilbage,
+.tilbage_top,
+.tilbage_bund,
 .videre {
   letter-spacing: 3px;
   padding-left: 0.5rem;
@@ -82,9 +84,18 @@ p {
   margin-block: 5rem;
   font-size: 1.5rem;
 }
-.tilbage a:hover,
+.tilbage_bund {
+  margin-block: 5rem;
+  font-size: 1.5rem;
+}
+.tilbage_top a:hover,
+.tilbage_bund a:hover,
 .videre a:hover {
   border-bottom: 1.5px solid;
+}
+.flex_bund {
+  display: flex;
+  justify-content: space-between;
 }
 
 a {
