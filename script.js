@@ -12,11 +12,9 @@ function toggleMenu() {
   // gør at den fjerne og forsvinder menuen ved at toggle klassen "shown" på menu
   menu.classList.toggle("shown");
 
-  // b) lav variablen "menuShown", som siger, at menu-variablen indeholder klassen "shown" via classList.contains("")
   // b) Laver variablen "menuShown", som siger, at menu-variablen indeholder klassen "shown" via classList.contains("")
   const menuShown = menu.classList.contains("shown");
 
-  // c) spørg om "menuShown" i if-sætningen nedenfor (=> if (menuShown)), og udskift teksten
   // c) spørger om "menuShown" og udskifter teksten via toggle-btn.
 
   if (menuShown) {
