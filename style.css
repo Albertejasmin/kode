@@ -87,8 +87,6 @@
 
 /*------------------- OM MIG ----------------------*/
 .navn {
-  letter-spacing: 0.5rem;
-  font-weight: bold;
   line-height: 5rem;
 }
 .navn h1 {
@@ -96,7 +94,6 @@
 }
 .jasmin {
   color: var(--blue);
-  /* letter-spacing: 1rem; */
 }
 
 .hvem_tekst {
@@ -140,12 +137,24 @@
   text-align: center;
   color: black;
 }
+.kontakt_flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ikoner {
+  display: flex;
+  align-self: end;
+  gap: 5px;
+}
 
 /* Sort kontakt tekst, så border kan gå helt ud + størrelse */
 /* Under 800 px */
 @media (max-width: 800px) {
   .navn {
     margin: 4rem;
+    justify-content: center;
+    display: grid;
   }
   .kontakt h2 {
     border-block: 2px solid;
@@ -202,11 +211,18 @@
   }
   .navn {
     grid-column: 2;
+    line-height: 6rem;
   }
   .om_mig_grid1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: var(--space-xl);
+  }
+  .faerdigheder_grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: var(--space-xl);
+    column-gap: 40px;
   }
 
   /* ------------------- FASE GRID --------------------- */
@@ -285,16 +301,11 @@
   /* text-align: end; */
 }
 
-.faerdigheder_grid {
-  display: grid;
-  grid-template-columns: auto auto;
-  margin-bottom: var(--space-xl);
-  column-gap: 40px;
-}
 .faerdigheder {
   grid-column: 1;
   place-content: center end;
 }
+
 .punkter {
   grid-column: 2;
   grid-row: 1;
